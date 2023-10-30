@@ -1,0 +1,34 @@
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.date-label, .distance-label {
+    width: 200px;
+}
+
+.input-date, .input-distance {
+    width: 200px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 120px;
+}
+
+.input-date:focus, .input-distance:focus {
+    cursor: pointer;
+    border: 2px solid blue;
+}
+
+.btn {
+    width: 60px;
+    height: 50px;
+    margin: 30px;
+    border: 2px solid black;
+}
