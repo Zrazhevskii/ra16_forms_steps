@@ -21,9 +21,8 @@
     margin-right: 120px;
 }
 
-.input-date:focus, .input-distance:focus {
+.input-date:hover, .input-distance:hover {
     cursor: pointer;
-    border: 2px solid blue;
 }
 
 .btn {
@@ -31,4 +30,10 @@
     height: 50px;
     margin: 30px;
     border: 2px solid black;
+}
+
+.btn:hover {
+    background-color: rgb(77, 73, 73);
+    color: white;
+    border: none;
 }

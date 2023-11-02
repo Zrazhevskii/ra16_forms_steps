@@ -1,14 +1,15 @@
 import React from 'react';
 import './Item.css'
 
-export const Item = ({ item }) => {
-    // console.log(item);
+export const Item = ({onDelet, item }) => {
+    let index = 120;
+    
     return (
-    <div className='box-item'>
-        <div className='date'>{item.date}</div>
+    <div className='box-item' key={++index}>
+        <div className='date' >{item.date}</div>
         <div className='distance'>{item.distance}</div>
-        <div className='change'>✎</div>
-        <div className='delet'>✘</div>
+        <div className='change' >✎</div>
+        <div className='delet' onClick={() => onDelet(item.date)}>✘</div>
     </div>
     )
 };
