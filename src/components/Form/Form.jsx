@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Form.css';
 import { Items } from '../Items/Items';
 import { Valid } from './Valid';
@@ -72,8 +72,8 @@ export const Form = () => {
     };
 
     const DeletElem = (date) => {
-        return setItems(items.filter((e) => e.date !== date))
-    }
+        return setItems(items.filter((e) => e.date !== date));
+    };
 
     return (
         <div>
@@ -110,7 +110,7 @@ export const Form = () => {
                     ОК
                 </button>
             </form>
-            <Items onDelet={DeletElem} data={items}/>
+            <Items onDelet={DeletElem} data={items} />
         </div>
     );
 };

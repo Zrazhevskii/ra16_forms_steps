@@ -1,15 +1,32 @@
-import React from 'react';
-import './Item.css'
+import './Item.css';
+import PropTypes from 'prop-types';
 
-export const Item = ({onDelet, item }) => {
-    let index = 120;
-    
+export const Item = ( props ) => {
+    const { key, onDelet, item } = props
+
     return (
-    <div className='box-item' key={++index}>
-        <div className='date' >{item.date}</div>
-        <div className='distance'>{item.distance}</div>
-        <div className='change' >✎</div>
-        <div className='delet' onClick={() => onDelet(item.date)}>✘</div>
-    </div>
-    )
+        <div className='box-item' key={key}>
+            <div className='date'>
+                {item.date}
+            </div>
+            <div className='distance'>
+                {item.distance}
+            </div>
+            <div className='change'>
+                ✎
+            </div>
+            <div
+                className='delet'
+                onClick={() => onDelet(item.date)}
+            >
+                ✘
+            </div>
+        </div>
+    );
+};
+
+Item.propTypes = {
+    onDelet: PropTypes.func.isRequired,
+    item: PropTypes.object.isRequired,
+    key: PropTypes.number
 };
