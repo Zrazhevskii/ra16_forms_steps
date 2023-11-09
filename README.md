@@ -4,4 +4,4 @@
 
 Общий интерфейс должен выглядеть следующим образом:
 
-![alt text](https://github.com/Zrazhevskii/ra16-lifecycle-watches/blob/main/src/image/watches.png)
+![alt text](https://github.com/Zrazhevskii/ra16_forms_steps/blob/main/src/img/steps.png)
