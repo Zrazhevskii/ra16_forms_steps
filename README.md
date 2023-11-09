@@ -1,3 +1,7 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/90h8b71jmbgjhtl6/branch/master?svg=true)](https://ci.appveyor.com/project/Zrazhevskii/ra16_forms_steps/branch/master)
+
+Deployment: https://zrazhevskii.github.io/ra16_forms_steps/
+
 **Учёт тренировок**
 
 Вы решили реализовать небольшое приложение, которое хранит данные о тренировках и прогулках, которые вы совершаете в течение недели.
